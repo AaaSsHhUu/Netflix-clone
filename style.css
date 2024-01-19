@@ -18,16 +18,13 @@ body{
     background-image: radial-gradient(ellipse,rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url(images/header-image.png);
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2rem 10rem;
+    padding: 2rem 10rem;
 }
 
 .logo{
@@ -163,7 +160,7 @@ body{
 
 @media screen and (width <= 500px){
     .nav{
-        margin: 20px;
+        padding: 20px;
     }
 
     .logo{
@@ -208,7 +205,7 @@ body{
 
 @media screen and (width > 500px) and (width <= 800px){
     .nav{
-        margin: 20px;
+        padding: 20px;
     }
     .logo{
         width: 150px;
@@ -239,4 +236,34 @@ body{
         font-size: 1.2rem;
         padding: 15px 20px;
     }
+}
+
+/* Poster Designing */
+.poster{
+    margin: 0.5rem 0;
+    height: 75vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster-img img{
+    width: 550px;
+    height: 450px;
+    margin: 0 2rem;
+}
+
+.poster-title{
+    color: white;
+}
+.poster-title h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 1rem 0;
+}
+.poster-title p{
+    font-size: 1.5rem;
+    line-height: 1.3;
 }

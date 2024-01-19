@@ -156,6 +156,10 @@ body{
     .logo{
         margin-bottom: 1rem;
     }
+
+    .heading{
+        top : 5%;
+    }
 }
 
 @media screen and (width <= 500px){
@@ -257,6 +261,7 @@ body{
 
 .poster-title{
     color: white;
+    padding: 0 4rem;
 }
 .poster-title h1{
     font-size: 2.5rem;
@@ -266,4 +271,58 @@ body{
 .poster-title p{
     font-size: 1.5rem;
     line-height: 1.3;
+}
+
+@media screen and (width > 1000px) {
+    .poster:nth-of-type(odd){
+        flex-direction: row-reverse;
+    }
+}
+
+/* Media queries for posters */
+
+@media screen and (width <= 500px) {
+    .poster{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .poster-img img{
+        width: 335px;
+        height: 245px;   
+        margin: 0.5rem 0;
+    }
+    .poster-title{
+        text-align: center;
+    }
+    .poster h1{
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+    .poster-title p{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (width > 500px ) and (width <= 1000px) {
+    .poster{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .poster-img img{
+        width: 415px;
+        height: 325px;   
+        margin-top: 0.5rem;
+    }
+    .poster-title{
+        text-align: center;
+    }
+    .poster h1{
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+    .poster-title p{
+        font-size: 1.25rem;
+    }
 }

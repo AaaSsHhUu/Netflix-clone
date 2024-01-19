@@ -151,6 +151,16 @@ body{
 
 /* media query for home page */
 
+@media screen and (width < 400px) {
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+}
+
 @media screen and (width <= 500px){
     .nav{
         margin: 20px;
@@ -199,5 +209,34 @@ body{
 @media screen and (width > 500px) and (width <= 800px){
     .nav{
         margin: 20px;
+    }
+    .logo{
+        width: 150px;
+        height: 35px;
+    }
+    .heading{
+        padding: 0 10px;
+    }
+    .heading-title h1{
+        font-size: 2rem;
+    }
+    .heading-title h3{
+        font-size: 1.25rem;
+    }
+    .heading-title p{
+        font-size: 1.20rem;
+        padding: 0 10px;
+    }
+
+    .heading-options{
+        flex-direction: column;
+    }
+    .heading-options input{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .main-btn{
+        font-size: 1.2rem;
+        padding: 15px 20px;
     }
 }

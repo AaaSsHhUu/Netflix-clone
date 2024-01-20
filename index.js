@@ -1,8 +1,11 @@
-const faqBtns = document.querySelectorAll(".faq-ques");
+const faqItems = document.querySelectorAll(".faq-item");
 
-faqBtns.forEach(()=>{
-    btn.addEventListener("click",(elem)=>{
-        elem.nextElementSibling.classList.toggle("active");
+for(item of faqItems){
+    item.addEventListener("click",()=>{
+        let ques = document.querySelector(".faq-ques");
+        let ans = document.querySelector(".faq-ans");
 
+        ques.children[1].classList.toggle("rotate");
+        ans.classList.toggle("active");
     })
-})
+}

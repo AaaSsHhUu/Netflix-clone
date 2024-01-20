@@ -380,8 +380,10 @@ body{
     color: white;
     background: #2d2d2d;
     margin: 2px auto;
-    padding: 40px 2rem;
+    padding: 0;
+    height: 0;
     text-align: start;
+    overflow: hidden;
 }
 
 .faq-ans p{
@@ -390,7 +392,10 @@ body{
 }
 
 .faq-ans.active{
-    height: 0;
-    overflow: hidden;
-    padding: 0;
+    padding: 40px 2rem;
+    height: fit-content;
+}
+
+.fa-plus.rotate{
+    transform: rotate(45deg);
 }

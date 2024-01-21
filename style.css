@@ -312,7 +312,7 @@ body{
     }
     .poster-img img{
         width: 415px;
-        height: 325px;   
+        height: 300px;   
         margin-top: 0.5rem;
     }
     .poster-title{
@@ -414,6 +414,12 @@ body{
     color : white;
     margin-bottom : 1rem;
 }
+
+.container-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container-options input{
     width: 30%;
     font-size: 1.1rem;
@@ -433,3 +439,62 @@ body{
     outline: 2px solid white;
 }
 
+/* media query for faq */
+
+@media screen and (width <= 550px) {
+    .faq-container h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .faq-ques{
+        padding: 30px 1rem;
+        width: 80%;
+    }
+    .faq-ques span{
+        padding-right: 1rem;
+        font-size: 1.2rem;
+    }
+    .faq-ques i{
+        font-size: 1rem;
+    }
+    .form p{
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .container-options{
+        flex-direction: column;
+    }
+    .container-options input{
+        width: 70%;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (width > 550px) and (width <= 800px) {
+    .faq-container h1{
+        font-size: 1.75rem;
+        text-align: center;
+    }
+    .faq-ques{
+        padding: 30px 1rem;
+        width: 80%;
+    }
+    .faq-ques span{
+        padding-right: 1rem;
+        font-size: 1.5rem;
+    }
+    .faq-ques i{
+        font-size: 1.5rem;
+    }
+    .form p{
+        font-size: 1.25rem;
+        padding: 0 1rem;
+    }
+    .container-options{
+        flex-direction: column;
+    }
+    .container-options input{
+        width: 70%;
+        margin: 0.5rem;
+    }
+}

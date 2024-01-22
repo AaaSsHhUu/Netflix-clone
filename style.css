@@ -288,8 +288,8 @@ body{
         justify-content: center;
     }
     .poster-img img{
-        width: 335px;
-        height: 245px;   
+        width: 280px;
+        height: 195px;   
         margin: 0.5rem 0;
     }
     .poster-title{
@@ -311,8 +311,8 @@ body{
         justify-content: center;
     }
     .poster-img img{
-        width: 415px;
-        height: 300px;   
+        width: 495px;
+        height: 406px;   
         margin-top: 0.5rem;
     }
     .poster-title{
@@ -549,4 +549,27 @@ body{
     font-weight: 500;
     font-size: 0.90rem;
     padding-top: 0.7rem;
+}
+
+/* media query for contact section */
+@media screen and (width <= 500px){
+    .contact{
+        height:100vh;
+        text-align: center;
+    }
+    .contact-links{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (width > 500px) and (width < 800px) {
+    .contact{
+        height:50vh;
+        text-align: center;
+    }
+    .contact-links{
+        width: 80%;
+    }
 }

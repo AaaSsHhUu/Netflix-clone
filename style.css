@@ -498,3 +498,55 @@ body{
         margin: 0.5rem;
     }
 }
+
+/* Designing Contact Section */
+.contact{
+    padding: 2rem 0;
+    margin-top: 0.5rem;
+    height: 50vh;
+    width: 100%;
+    background: #000;
+    padding: 2rem;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.contact p{
+    width: 70%;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+.contact a{
+    opacity: 0.7;
+    color: white;
+}
+
+.contact-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.col a{
+    display: block;
+    margin: 1.5rem auto;
+    font-size: 0.90rem;
+}
+
+.col a:hover{
+    opacity: 1;
+}
+.contact-btn{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.end-p{
+    opacity: 0.7;
+    font-weight: 500;
+    font-size: 0.90rem;
+    padding-top: 0.7rem;
+}

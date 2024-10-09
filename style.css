@@ -562,6 +562,14 @@ body{
         width: 90%;
         text-align: center;
     }
+
+    .faq-ans{
+        width: 80%;
+    }
+
+    .faq-ans p{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (width > 500px) and (width < 800px) {

@@ -580,4 +580,14 @@ body{
     .contact-links{
         width: 80%;
     }
+    .faq-ans{
+        width: 80%;
+    }
+    .form p{
+        padding: 0 4rem;
+    }
+    .poster-img img{
+        width: 475px;
+        height: 300px;
+    }
 }
